@@ -1,0 +1,20 @@
+{
+  "name": "grte-admin-customers",
+  "version": "0.0.0",
+  "description": "Webcomponent grte-admin-customers following open-wc recommendations",
+  "author": "grte-admin-customers",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "web-dev-server"
+  },
+  "dependencies": {
+    "@vaadin/vaadin-confirm-dialog": "^20.0.0",
+    "lit-element": "^2.5.1",
+    "lit-html": "^1.4.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.17"
+  }
+}

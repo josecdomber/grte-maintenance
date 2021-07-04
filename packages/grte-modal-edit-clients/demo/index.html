@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../grte-modal-edit-clients.js';
+
+    const title = 'Hello owc World!';
+    render(
+      html`
+        <button>Abrir modal confirm</button>
+        <grte-modal-edit-clients>
+        </grte-modal-edit-clients>
+      `,
+      document.querySelector('#demo')
+    );
+
+    const dataInput = {
+      name: 'Pedro López',
+      phone: 193225656,
+      email: 'plopez@yahoo.es'
+    };
+    const dialog = document.querySelector('grte-modal-edit-clients');
+    document.querySelector('button').addEventListener('click', function() {
+      dialog.customerData = { ...dataInput };
+      dialog.open();
+    });
+  </script>
+</body>
+</html>

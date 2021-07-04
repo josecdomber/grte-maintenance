@@ -1,0 +1,21 @@
+{
+  "name": "grte-tab-generic",
+  "version": "0.1.0",
+  "description": "Webcomponent grte-tab-generic following open-wc recommendations",
+  "author": "grte-tab-generic",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --watch --app-index demo/index.html --open"
+  },
+  "dependencies": {
+    "@material/mwc-button": "^0.21.0",
+    "@vaadin/vaadin-grid": "^20.0.0",
+    "lit-element": "^2.5.1",
+    "lit-html": "^1.4.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.17"
+  }
+}

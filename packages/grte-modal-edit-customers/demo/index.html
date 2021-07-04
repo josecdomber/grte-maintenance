@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../grte-modal-edit-customers.js';
+
+    render(
+      html`
+        <button>Abrir modal</button> 
+        <grte-modal-edit-customers>
+        </grte-modal-edit-customers>
+      `,
+      document.querySelector('#demo')
+    );
+    const dataInput = {
+      name: 'Pedro López',
+      phone: 193225656,
+      email: 'plopez@yahoo.es'
+    };
+    const dialog = document.querySelector('grte-modal-edit-customers');
+    document.querySelector('button').addEventListener('click', function() {
+      dialog.customerData = { ...dataInput };
+      dialog.open();
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "grte-modal-edit-customers",
+  "version": "0.1.0",
+  "description": "Webcomponent grte-modal-edit-customers following open-wc recommendations",
+  "author": "grte-modal-edit-customers",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --watch --app-index demo/index.html --open"
+  },
+  "dependencies": {
+    "@vaadin/vaadin-button": "^20.0.0",
+    "@vaadin/vaadin-dialog": "^20.0.0",
+    "@vaadin/vaadin-form-layout": "^20.0.0",
+    "@vaadin/vaadin-text-field": "^20.0.0",
+    "lit-element": "^2.5.1",
+    "lit-html": "^1.4.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.17"
+  }
+}

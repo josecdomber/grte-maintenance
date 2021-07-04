@@ -1,0 +1,19 @@
+{
+  "name": "grte-x-api-grte",
+  "version": "0.0.0",
+  "description": "Webcomponent grte-x-api-grte following open-wc recommendations",
+  "author": "grte-x-api-grte",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --watch --app-index demo/index.html --open"
+  },
+  "dependencies": {
+    "lit-html": "^1.4.1",
+    "lit-element": "^2.5.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.17"
+  }
+}

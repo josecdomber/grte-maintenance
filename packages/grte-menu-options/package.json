@@ -1,0 +1,21 @@
+{
+  "name": "grte-menu-options",
+  "version": "0.1.0",
+  "description": "Webcomponent grte-menu-options following open-wc recommendations",
+  "author": "grte-menu-options",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --watch --app-index demo/index.html --open"
+  },
+  "dependencies": {
+    "@material/mwc-list": "^0.21.0",
+    "lit-element": "^2.5.1",
+    "lit-html": "^1.4.1",
+    "grte-menu-options": "^0.1.0"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.17"
+  }
+}
