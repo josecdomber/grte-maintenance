@@ -65,7 +65,6 @@ export class GrteFlow extends LitElement {
 
   async firstUpdated() {
 
-    // pendiente
     // this.addEventListener('view-admin-data-load', this.listenView);
 
     this._managerFlow = this.shadowRoot.querySelector('manager-flow');
